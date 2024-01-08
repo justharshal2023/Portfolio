@@ -1,93 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Harshal_Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-
-<body>
-    <div class="cover">
-        <nav class="nav">
-            <ul type="none">
-                <li id="nav_home"><a href="#">Home</a></li>
-                <li id="nav_skills"><a href="#skills">Skills</a></li>
-                <li id="nav_experience"><a href="#projects">Projects</a></li>
-                <li id="nav_skills"><a href="#experience">Experience</a></li>
-                <li id="nav_education"><a href="#education">Education</a></li>
-                <li id="nav_contact"><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle" type="button"><img src="theme.png" alt="Theme"></button>
-        <p>Harshal</p>
-        <div class="links">
-            <ul type="none">
-                <li><a href="https://www.linkedin.com/in/harshal-123a90250/" target="_blank">
-                        <img src="linkedin.png" alt="Linkedin_Profile" height="30px" width="30px">
-                    </a></li>
-                <li><a href="https://leetcode.com/Harshal2022/" target="_blank">
-                        <img calss="leetcode" src="leetcode.png" alt="leetcode_profile" height="30px" width="30px">
-                    </a></li>
-                <li><a href="https://github.com/justharshal2023" target="_blank">
-                        <img src="github.png" alt="github_profile" height="30px" width="30px">
-                    </a></li>
-                <li><a href="https://mailto:harshal19052003@gmail.com" target="_blank">
-                        <img src="email.png" alt="Email" height="30px" width="30px"></a>
-                    </a>
-                </li>
-                <li><a href="tel:+1234567890">
-                        <img src="phone.png" alt="phone_no" height="28px" width="28px">
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch The Insect</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Insect</h1>
+      <button class="btn" id="start-btn">Play Game</button>
     </div>
-    <div id="about">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, delectus possimus? Explicabo mollitia
-            expedita quod accusantium laborum dolores iste qui voluptatibus asperiores, placeat deserunt delectus?
-            Magni, deserunt, reiciendis eaque possimus, harum voluptates veniam porro maiores similique expedita cum
-            saepe. Ex sequi sapiente velit possimus, delectus placeat modi. Fugit obcaecati labore deleniti ut corrupti.
-            Amet maxime quisquam officia ab iure expedita, animi perspiciatis eveniet sapiente nisi fuga tenetur
-            voluptas aliquam ratione culpa deserunt modi quibusdam reprehenderit, accusamus distinctio, impedit ea
-            voluptatibus. Esse necessitatibus, temporibus inventore maxime commodi deserunt itaque molestias! Eligendi
-            et quasi modi nobis excepturi, numquam illum accusamus libero reprehenderit?
-        </p>
-    </div>
-    <div id="skills">
-        <h1>Skills</h1>
-        <div class="container">
-            <div id="html">
-                <div class="a">HTML</div>
-                <div class="b"></div>
-            </div>
-            <div id="css">
-                <div class="a">CSS</div>
-                <div class="b"></div>
-            </div>
-            <div id="javascript">
-                <div class="a">JAVASCRIPT</div>
-                <div class="b"></div>
-            </div>
-            <div id="java">
-                <div class="a">JAVA
-                </div>
-                <div class="b"></div>
-            </div>
-            <div id="python">
-                <div class="a">PYTHON</div>
-                <div class="b"></div>
-            </div>
-        </div>
-    </div>
-    <div id="portfolio">
-        <h1>Portfolio</h1>
 
+    <div class="screen">
+      <h1>What is your "favorite" insect?</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Mosquito</p>
+            <img
+               src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+               alt="mosquito"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Spider</p>
+            <img
+               src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+               alt="spider"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Roach</p>
+            <img
+               src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+               alt="roach"
+               />
+          </button>
+        </li>
+      </ul>
     </div>
-</body>
 
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Are you annoyed yet? <br>
+        You are playing an impossible game!!
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
